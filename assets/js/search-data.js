@@ -1,0 +1,826 @@
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-home",
+    title: "Home",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/physics-lab/";
+    },
+  },{id: "nav-people",
+          title: "People",
+          description: "Members of the Nuclear Physics Laboratory at Yonsei University.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/physics-lab/people/";
+          },
+        },{id: "nav-research",
+          title: "Research",
+          description: "Research groups and individual research topics in our lab.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/physics-lab/projects/";
+          },
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "Selected scholarly works from the laboratory.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/physics-lab/publications/";
+          },
+        },{id: "nav-news",
+          title: "News",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/physics-lab/news/";
+          },
+        },{id: "nav-gallery",
+          title: "Gallery",
+          description: "Visual highlights from our laboratory and experiments.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/physics-lab/gallery/";
+          },
+        },{id: "post-a-post-with-plotly-js",
+        
+          title: "a post with plotly.js",
+        
+        description: "this is what included plotly.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2025/plotly/";
+          
+        },
+      },{id: "post-a-post-with-image-galleries",
+        
+          title: "a post with image galleries",
+        
+        description: "this is what included image galleries could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/photo-gallery/";
+          
+        },
+      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-a-post-with-tabs",
+        
+          title: "a post with tabs",
+        
+        description: "this is what included tabs in a post could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/tabs/";
+          
+        },
+      },{id: "post-a-post-with-typograms",
+        
+          title: "a post with typograms",
+        
+        description: "this is what included typograms code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/typograms/";
+          
+        },
+      },{id: "post-a-post-that-can-be-cited",
+        
+          title: "a post that can be cited",
+        
+        description: "this is what a post that can be cited looks like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/post-citation/";
+          
+        },
+      },{id: "post-a-post-with-pseudo-code",
+        
+          title: "a post with pseudo code",
+        
+        description: "this is what included pseudo code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/pseudocode/";
+          
+        },
+      },{id: "post-a-post-with-code-diff",
+        
+          title: "a post with code diff",
+        
+        description: "this is how you can display code diffs",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/code-diff/";
+          
+        },
+      },{id: "post-a-post-with-advanced-image-components",
+        
+          title: "a post with advanced image components",
+        
+        description: "this is what advanced image components could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/advanced-images/";
+          
+        },
+      },{id: "post-a-post-with-vega-lite",
+        
+          title: "a post with vega lite",
+        
+        description: "this is what included vega lite code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/vega-lite/";
+          
+        },
+      },{id: "post-a-post-with-geojson",
+        
+          title: "a post with geojson",
+        
+        description: "this is what included geojson code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/geojson-map/";
+          
+        },
+      },{id: "post-a-post-with-echarts",
+        
+          title: "a post with echarts",
+        
+        description: "this is what included echarts code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/echarts/";
+          
+        },
+      },{id: "post-a-post-with-chart-js",
+        
+          title: "a post with chart.js",
+        
+        description: "this is what included chart.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2024/chartjs/";
+          
+        },
+      },{id: "post-a-post-with-tikzjax",
+        
+          title: "a post with TikZJax",
+        
+        description: "this is what included TikZ code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2023/tikzjax/";
+          
+        },
+      },{id: "post-a-post-with-bibliography",
+        
+          title: "a post with bibliography",
+        
+        description: "an example of a blog post with bibliography",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2023/post-bibliography/";
+          
+        },
+      },{id: "post-a-post-with-jupyter-notebook",
+        
+          title: "a post with jupyter notebook",
+        
+        description: "an example of a blog post with jupyter notebook",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2023/jupyter-notebook/";
+          
+        },
+      },{id: "post-a-post-with-custom-blockquotes",
+        
+          title: "a post with custom blockquotes",
+        
+        description: "an example of a blog post with custom blockquotes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2023/custom-blockquotes/";
+          
+        },
+      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
+        
+          title: "a post with table of contents on a sidebar",
+        
+        description: "an example of a blog post with table of contents on a sidebar",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2023/sidebar-table-of-contents/";
+          
+        },
+      },{id: "post-a-post-with-audios",
+        
+          title: "a post with audios",
+        
+        description: "this is what included audios could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2023/audios/";
+          
+        },
+      },{id: "post-a-post-with-videos",
+        
+          title: "a post with videos",
+        
+        description: "this is what included videos could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2023/videos/";
+          
+        },
+      },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
+        
+          title: "displaying beautiful tables with Bootstrap Tables",
+        
+        description: "an example of how to use Bootstrap Tables",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2023/tables/";
+          
+        },
+      },{id: "post-a-post-with-table-of-contents",
+        
+          title: "a post with table of contents",
+        
+        description: "an example of a blog post with table of contents",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2023/table-of-contents/";
+          
+        },
+      },{id: "post-a-post-with-giscus-comments",
+        
+          title: "a post with giscus comments",
+        
+        description: "an example of a blog post with giscus comments",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2022/giscus-comments/";
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{id: "post-a-post-with-redirect",
+        
+          title: "a post with redirect",
+        
+        description: "you can also redirect to assets like pdf",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/assets/pdf/example_pdf.pdf";
+          
+        },
+      },{id: "post-a-post-with-diagrams",
+        
+          title: "a post with diagrams",
+        
+        description: "an example of a blog post with diagrams",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2021/diagrams/";
+          
+        },
+      },{id: "post-a-distill-style-blog-post",
+        
+          title: "a distill-style blog post",
+        
+        description: "an example of a distill-style blog post and main elements",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2021/distill/";
+          
+        },
+      },{id: "post-a-post-with-twitter",
+        
+          title: "a post with twitter",
+        
+        description: "an example of a blog post with twitter",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2020/twitter/";
+          
+        },
+      },{id: "post-a-post-with-disqus-comments",
+        
+          title: "a post with disqus comments",
+        
+        description: "an example of a blog post with disqus comments",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2015/disqus-comments/";
+          
+        },
+      },{id: "post-a-post-with-math",
+        
+          title: "a post with math",
+        
+        description: "an example of a blog post with some math",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2015/math/";
+          
+        },
+      },{id: "post-a-post-with-code",
+        
+          title: "a post with code",
+        
+        description: "an example of a blog post with some code",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2015/code/";
+          
+        },
+      },{id: "post-a-post-with-images",
+        
+          title: "a post with images",
+        
+        description: "this is what included images could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2015/images/";
+          
+        },
+      },{id: "post-a-post-with-formatting-and-links",
+        
+          title: "a post with formatting and links",
+        
+        description: "march &amp; april, looking forward to summer",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/physics-lab/blog/2015/formatting-and-links/";
+          
+        },
+      },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/physics-lab/books/the_godfather/";
+            },},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-baryons-2025-lim-hyunji-amp-amp-ji-sujeong-11-11-exhic-d-2025-smith-krista-11-16-kshep-2025-fall-meeting-lim-sanghoon",
+          title: 'Baryons 2025 — Lim HyunJi &amp;amp;amp; Ji SuJeong (11/11) · ExHIC-d 2025 —...',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-choi-sanghyeon-우수상-수상-lim-hyunji-우수발표상-수상",
+          title: 'Choi, SangHyeon 우수상 수상 · Lim, HyunJi 우수발표상 수상',
+          description: "",
+          section: "News",},{id: "news-fkppn-학회-발표-lim-sanghoon-12-17-ryu-jaehyeok-12-16-oh-jongho-amp-amp-choi-changhwan-12-15",
+          title: 'FKPPN 학회 발표 — Lim SangHoon (12/17), Ryu JaeHyeok (12/16), Oh JongHo &amp;amp;amp;...',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "projects-b-jet-gnn-tagging",
+          title: 'b-jet GNN Tagging',
+          description: "Development of GNN-based methods for b-jet tagging in heavy-ion environments.",
+          section: "Projects",handler: () => {
+              window.location.href = "/physics-lab/projects/exp_1/";
+            },},{id: "projects-vector-meson-production",
+          title: 'Vector Meson Production',
+          description: "Studying low-mass vector meson production at forward rapidity.",
+          section: "Projects",handler: () => {
+              window.location.href = "/physics-lab/projects/exp_2/";
+            },},{id: "projects-charmed-baryon-multiplicity",
+          title: 'Charmed Baryon Multiplicity',
+          description: "Multiplicity dependence of Xi_c production in pp collisions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/physics-lab/projects/exp_3/";
+            },},{id: "projects-quarkonia-rapidity-dependence",
+          title: 'Quarkonia Rapidity Dependence',
+          description: "Multiplicity dependent J/psi and psi(2S) production at forward/backward rapidity.",
+          section: "Projects",handler: () => {
+              window.location.href = "/physics-lab/projects/exp_4/";
+            },},{id: "projects-hadronic-resonances-amp-k1-1270",
+          title: 'Hadronic Resonances &amp;amp; K1(1270)',
+          description: "Studying K1(1270) and resonant states in pp and AA collisions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/physics-lab/projects/exp_5/";
+            },},{id: "projects-selection-bias-in-small-systems",
+          title: 'Selection Bias in Small Systems',
+          description: "Effects of selection bias on high-pT yield measurements in small systems.",
+          section: "Projects",handler: () => {
+              window.location.href = "/physics-lab/projects/mod_1/";
+            },},{id: "projects-cnn-image-based-tagging",
+          title: 'CNN Image-based Tagging',
+          description: "Deep learning for jet identification using image-like representations.",
+          section: "Projects",handler: () => {
+              window.location.href = "/physics-lab/projects/mod_2/";
+            },},{id: "projects-heavy-ion-collision-modeling",
+          title: 'Heavy Ion Collision Modeling',
+          description: "Simulating the evolution of the Quark-Gluon Plasma.",
+          section: "Projects",handler: () => {
+              window.location.href = "/physics-lab/projects/mod_3/";
+            },},{id: "projects-detector-simulation-amp-opt",
+          title: 'Detector Simulation &amp;amp; Opt.',
+          description: "Modeling performance for RAON and lamps detectors.",
+          section: "Projects",handler: () => {
+              window.location.href = "/physics-lab/projects/mod_4/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/physics-lab/teachings/introduction-to-machine-learning/";
+            },},{id: "teachings-modern-nuclear-physics",
+          title: 'Modern Nuclear Physics',
+          description: "This course introduces the fundamental concepts of nuclear physics, from basic properties of nuclei to advanced research topics in exotic isotopes and nuclear astrophysics.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/physics-lab/teachings/modern-nuclear-physics/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%63%6F%6E%74%61%63%74@%79%6F%6E%73%65%69.%61%63.%6B%72", "_blank");
+        },
+      },{
+        id: 'social-inspire',
+        title: 'Inspire HEP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://inspirehep.net/authors/1010907", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
