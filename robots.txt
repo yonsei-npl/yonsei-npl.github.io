@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://yonsei-npl.github.io/yonsei-npl/sitemap.xml
+Sitemap: https://yonsei-npl.github.io/sitemap.xml
