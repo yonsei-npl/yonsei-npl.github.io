@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-people",
           title: "People",
-          description: "Members of the Nuclear Physics Laboratory at Yonsei University.",
+          description: "Members of the Nuclear Physics Laboratory at Yonsei University",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
