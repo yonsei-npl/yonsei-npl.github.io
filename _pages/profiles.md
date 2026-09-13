@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: People
-description: Members of the Nuclear Physics Laboratory at Yonsei University.
+description: Members of the Nuclear Physics Laboratory at Yonsei University
 nav: true
 nav_order: 2
 ---
@@ -195,14 +195,14 @@ nav_order: 2
     </div>
     <div class="person-card">
       <div class="person-avatar">🔬</div>
-      <div class="person-name">DANISCH, Meike</div>
+      <div class="person-name">RICCI, Riccardo</div>
       <div class="person-title">Postdoctoral Researcher</div>
       <div class="person-email"></div>
     </div>
     <div class="person-card">
       <div class="person-avatar">🔬</div>
       <div class="person-name">LEE, JongWon</div>
-      <div class="person-title">Postdoctoral Researcher</div>
+      <div class="person-title">Visiting Researcher</div>
       <div class="person-email"></div>
     </div>
   </div>
@@ -267,26 +267,74 @@ nav_order: 2
   <div class="people-grid">
     <div class="person-card">
       <div class="person-avatar">📚</div>
-      <div class="person-name">JEONG, Seul-I</div>
+      <div class="person-name">JEONG, SeulI</div>
       <div class="person-title">Master Student</div>
       <div class="person-email"></div>
     </div>
     <div class="person-card">
       <div class="person-avatar">📚</div>
-      <div class="person-name">Hwang, Yun-gwang</div>
+      <div class="person-name">HWANG, YunGwang</div>
       <div class="person-title">Master Student</div>
       <div class="person-email"></div>
     </div>
     <div class="person-card">
       <div class="person-avatar">📚</div>
-      <div class="person-name">Seo, Youngwoong</div>
+      <div class="person-name">SEO, YoungWoong</div>
       <div class="person-title">Master Student</div>
       <div class="person-email"></div>
     </div>
       <div class="person-card">
       <div class="person-avatar">📚</div>
-      <div class="person-name">KIM, Yechan</div>
+      <div class="person-name">KIM, YeChan</div>
       <div class="person-title">Master Student</div>
+      <div class="person-email"></div>
+    </div>
+  </div>
+</div>
+
+<div class="people-section">
+  <h3>Undergraduate Students</h3>
+  <div class="people-grid">
+    <div class="person-card">
+      <div class="person-avatar">📚</div>
+      <div class="person-name">CHOI, SangHyeon</div>
+      <div class="person-title">Undergraduate Student</div>
+      <div class="person-email"></div>
+    </div>
+    <div class="person-card">
+      <div class="person-avatar">📚</div>
+      <div class="person-name">KIM, GyuMin</div>
+      <div class="person-title">Undergraduate Student</div>
+      <div class="person-email"></div>
+    </div>
+    <div class="person-card">
+      <div class="person-avatar">📚</div>
+      <div class="person-name">PARK, GyuMin</div>
+      <div class="person-title">Undergraduate Student</div>
+      <div class="person-email"></div>
+    </div>
+    <div class="person-card">
+      <div class="person-avatar">📚</div>
+      <div class="person-name">KIM, DaeKyung</div>
+      <div class="person-title">Undergraduate Student</div>
+      <div class="person-email"></div>
+    </div>
+    <div class="person-card">
+      <div class="person-avatar">📚</div>
+      <div class="person-name">YOON, JeongEun</div>
+      <div class="person-title">Undergraduate Student</div>
+      <div class="person-email"></div>
+    </div>
+    <div class="person-card">
+      <div class="person-avatar">📚</div>
+      <div class="person-name">OH, JongHyeok</div>
+      <div class="person-title">Undergraduate Student</div>
+      <div class="person-email"></div>
+    </div>
+    <div class="person-card">
+      <div class="person-avatar">📚</div>
+      <div class="person-name">CHO, EunSe</div>
+      <div class="person-title">Undergraduate Student</div>
       <div class="person-email"></div>
     </div>
   </div>
