@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Selected scholarly works from the laboratory.
+description: Selected Publications from the Laboratory
 nav: true
 nav_order: 4
 ---
