@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /projects/
-description: Research groups and individual research topics in our lab.
+description: Research Groups and Individual Research Topics
 nav: true
 nav_order: 3
 display_categories: [High-Energy Nuclear Experiments, Phenomenological Modeling]
